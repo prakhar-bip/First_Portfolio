@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="5651989.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    
+
+    <title>Portfolio</title>
+    
+  </head>
+  <body>
+    <header id="head">
+      <h1 id="first">Portfolio</h1>
+      <ul id="un">
+        <li class="header-list">About me</li>
+        <p class="paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          natus laborum nobis doloribus veniam at voluptatem quas sit repellat,
+          ex corporis facere, in vero aliquid neque nesciunt veritatis. Quaerat
+          unde, cupiditate repellat nam illo dolorem perferendis quisquam omnis
+          doloremque eius ex laborum eveniet quam suscipit deleniti quas, quidem
+          et quasi.
+        </p>
+       
+        
+        
+      </ul>
+    </header>
+
+    <section id="sect">
+      <img id="image" src="./img/IMG-20240714-WA0005[1].jpg" alt="Loading" />
+      <h3 id="third">Prakhar Satish Batwal</h3>
+    </section>
+
+    <footer class="pri-foot">
+      <button class="social">Social</button>
+      <ul class="exit">
+        <li class="same">
+          <a
+            href="https://www.instagram.com/prakhar.batwal?igsh=ZHIwbGVjYW82eHQ="
+            target="_blank"
+            ><img
+              class="img"
+              src="./img/Instagram_logo_2016.svg.png"
+              alt="Instagram"
+          /></a>
+        </li>
+        <li class="same">
+          <a
+            href="https://www.linkedin.com/in/prakhar-batwal-a72323249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            ><img
+              class="img"
+              src="./img/Color-of-the-LinkedIn-Logo.jpg"
+              alt="linkedin"
+          /></a>
+        </li>
+      </ul>
+
+      <button class="Projects">Projects</button>
+      <ul class="github">
+        <li class="ps"><a href="https://github.com/prakhar-bip" target="_blank"><img class="pro" src="./img/github_PNG68.png" alt=""></a></li>
+      </ul>
+      <button class="Skills">Skills</button>
+      <ul class="skills">
+        <li>Frontend</li>
+        <li>backend</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+    </footer>
+
+    <footer class="sec-foot">
+      <h3 id="num">Whatsapp-> <span>7049970182</span> </h3>
+      <h3 id="mail">mail-> <span>prakharbatwal418@gmail.com</span></h3>
+    </footer>
+  </body>
+
+  <script>
+    const Projects = document.querySelector(".Projects");
+    const github = document.querySelector(".github");
+
+    Projects.addEventListener("click", () => {
+    github.classList.toggle("git");
+    });
+
+    const social = document.querySelector(".social");
+    const exit = document.querySelector(".exit");
+
+    social.addEventListener("click", () => {
+    exit.classList.toggle("active");
+    });
+
+    const x = document.querySelector(".header-list");
+    const para = document.querySelector(".paragraph");
+
+    x.addEventListener("click", () => {
+      para.classList.toggle("para");
+    });
+
+    const Skills = document.querySelector(".Skills");
+    const skills = document.querySelector(".skills");
+
+    Skills.addEventListener("click", () => {
+    skills.classList.toggle("Show-skills");
+    });
+
+  </script>
+</html>
